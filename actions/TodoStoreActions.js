@@ -1,12 +1,13 @@
 var AppDispatcher = require('../dispatcher/AppDispatcher');
-var Api = require('../Api');
 var TodoStoreActions = {
 
   loadTodos: function() {
-    AppDispatcher.handleViewAction({
-      actionType: "LOAD_TODOS",
-      data: {todos: Api.todos};
-    })
+  	var todos = [
+  		{id: 1, content: 'todo 1'},
+  		{id: 2, content: 'todo 2'},
+  		{id: 3, content: 'todo 3'}
+	   ];
+    return todos;
   }
 
 };

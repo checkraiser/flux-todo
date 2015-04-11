@@ -6,7 +6,7 @@ var TodoStore = require('./stores/TodoStore')
 // Method to retrieve application state from store
 function getAppState() {
     return {
-	   todos: TodoStoreActions.getTodos()
+	   todos: TodoStoreActions.loadTodos()
 	};
 }
 var TodoApp = React.createClass({
